@@ -6,13 +6,14 @@
         <meta name="author" content="vedpatil611">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
-            
             .actionbar {
-                list-style-type: none;
-                display: inline-flex;
                 float: right;
             }
-            .actionbar li {
+            .actionbar ul {
+                list-style-type: none;
+                display: inline-flex;
+            }
+            .actionbar ul li {
                 padding-left: 20;
                 padding-right: 20;
                 padding-top: 5;
@@ -25,14 +26,81 @@
     <body>
         <div style="position: relative">
             <h1>Hotel Smotel</h1> 
+            <div class="actionbar">
+                <ul>    
+                    <li><a href="#">Login</a></li>
+                    <li><a href="Index.html">Sign up</a></li>
+                </ul>
+            </div>
             
-            <ul class="actionbar">    
-                <li><a href="#">Login</a></li>
-                <li><a href="Index.html">Sign up</a></li>
-            </ul>
+            <div style="position: absolute;
+                        margin-top: 70px;
+                        margin-left: 50%;
+                        transform: translate(-50%, 0%)">
+                
+                <form name="signup" style="">
+                
+                    <table>
+                    
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type="text" name="fname" /></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Last Name</td>
+                            <td><input type="text" name="lname" /></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" name="email" /></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text" name="username" /></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Age</td>
+                            <td><input type="date" name="dob" /></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <select>
+                                    <option name="M">Male</option>
+                                    <option name="F">Female</option>
+                                    <option name="O">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="password" /></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Confirm password</td>
+                            <td><input type="password" name="cpassword" /></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Profile photo</td>
+                            <td><input type="file" accept="image/*" name="photo" /></td>
+                        </tr>
+                    </table>
+                
+                    <input type="submit"/>
+                
+                </form>
+            </div>
         </div>
         
-        <main style="position: relative">
+        <!--<main style="position: relative">
             <form name="signup" style="margin-left: 50%;
                                        transform: translate(-50%, 0%)">
                 <table>
@@ -90,6 +158,6 @@
                 
                 <input type="submit"/>
             </form>
-        </main>
+        </main>-->
     </body>
 </html>
